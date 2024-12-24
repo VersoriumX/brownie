@@ -29,9 +29,9 @@ setup(
     description="A Python framework for Ethereum smart contract deployment, testing and interaction.",  # noqa: E501
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="Ben Hauser",
-    author_email="ben@hauser.id",
-    url="https://github.com/eth-brownie/brownie",
+    author="TJG",
+    author_email="versoriumx",
+    url="https://github.com/VersoriumX /brownie",
     keywords=["brownie"],
     install_requires=requirements,
     entry_points={
