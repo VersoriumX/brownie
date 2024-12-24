@@ -4,29 +4,12 @@
 #
 #    pip-compile requirements-windows.in
 #
-aiohttp==3.8.1
-    # via
-    #   -r requirements.txt
-    #   web3
-aiosignal==1.2.0
-    # via
-    #   -r requirements.txt
-    #   aiohttp
+
 asttokens==2.0.5
     # via
     #   -r requirements.txt
     #   vyper
-async-timeout==4.0.2
-    # via
-    #   -r requirements.txt
-    #   aiohttp
-attrs==22.1.0
-    # via
-    #   -r requirements.txt
-    #   aiohttp
-    #   hypothesis
-    #   jsonschema
-    #   pytest
+
 base58==2.1.1
     # via
     #   -r requirements.txt
