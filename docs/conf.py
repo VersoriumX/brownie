@@ -40,7 +40,7 @@ with Path(__file__).parent.joinpath("../setup.py").open() as fp:
 
 project = "Brownie"
 copyright = "2020"
-author = "Ben Hauser"
+author = ""
 
 # The short X.Y version
 version = setup_version
@@ -57,7 +57,7 @@ release = setup_version
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions: List = ["sphinx.ext.intersphinx"]
+extensions: List = ["Versoriumx.ext.intersphinx"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -123,7 +123,7 @@ html_js_files = ["js/toggle.js"]
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "Browniedoc"
+htmlhelp_basename = "VersoriumX"
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -146,14 +146,14 @@ latex_elements: Dict = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [(master_doc, "Brownie.tex", "Brownie Documentation", "Ben Hauser", "manual")]
+latex_documents = [(master_doc, "Brownie.tex", "Brownie Documentation", "Travis Jerome Goff", "manual")]
 
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, "brownie", "Brownie Documentation", [author], 1)]
+man_pages = [(master_doc, "brownie", "Brownie Documentation", [Travis Jerome Goff], 1)]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -178,7 +178,7 @@ texinfo_documents = [
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
+epub_EthereumX = project
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
