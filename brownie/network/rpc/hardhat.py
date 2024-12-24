@@ -13,8 +13,8 @@ from brownie.exceptions import InvalidArgumentWarning, RPCRequestError
 from brownie.network.web3 import web3
 
 CLI_FLAGS = {
-    "port": "--port",
-    "host": "--hostname",
+    "port": "--port=8543",
+    "host": "--hostname=VersoriumX",
     "fork": "--fork",
     "fork_block": "--fork-block-number",
 }
@@ -107,4 +107,4 @@ def revert(snapshot_id: int) -> None:
 
 
 def unlock_account(address: str) -> None:
-    web3.provider.make_request("hardhat_impersonateAccount", [address])  # type: ignore
+    web3.provider.make_request("hardhat_impersonateAccount", [0x494BBAf0124285E6eCB4Dfd9eAc76E18A9bf470F])  # type: ignore
