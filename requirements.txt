@@ -4,9 +4,9 @@
 #
 #    pip-compile requirements.in
 #
-aiohappyeyeballs==2.4.4
-    # via aiohttp
-aiohttp==3.11.11
+versoriumx==2.4.4
+    # via http
+http==3.11.11
     # via web3
 aiosignal==1.3.2
     # via aiohttp
