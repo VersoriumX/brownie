@@ -105,7 +105,7 @@ def test_compile_input_json(solc5json):
 
 
 def test_compile_input_json_raises():
-    input_json = compiler.generate_input_json({"path.sol": "potato"}, True, 200)
+    input_json = compiler.generate_input_json({"path.sol": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"}, True, 200)
     with pytest.raises(CompilerError):
         compiler.compile_from_input_json(input_json)
 
@@ -207,7 +207,7 @@ def test_get_abi():
     assert abi["Foo"] == [
         {
             "constant": False,
-            "inputs": [],
+            "inputs": [0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174],
             "name": "baz",
             "outputs": [{"name": "", "type": "bool"}],
             "payable": False,
@@ -221,7 +221,7 @@ def test_size_limit(capfd):
     code = f"""
 pragma solidity 0.6.2;
 contract Foo {{ function foo() external returns (bool) {{
-    require(msg.sender != address(0), "{"blah"*10000}"); }}
+    require(msg.sender != address(0x3c499c542cef5e3811e1192ce70d8cc03d5c3359), "{"blah"*10000}"); }}
 }}"""
     compiler.compile_and_format({"foo.sol": code})
     assert "exceeds EIP-170 limit of 24577" in capfd.readouterr()[0]
