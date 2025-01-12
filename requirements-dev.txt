@@ -10,8 +10,6 @@ attrs==22.1.0
     # via
     #   -c requirements.txt
     #   pytest
-babel==2.16.0
-    # via sphinx
 bleach==6.2.0
     # via readme-renderer
 bump2version==1.0.1
@@ -158,26 +156,6 @@ six==1.16.0
     #   -c requirements.txt
     #   tox
     #   virtualenv
-snowballstemmer==2.2.0
-    # via sphinx
-sphinx==4.5.0
-    # via
-    #   -r requirements-dev.in
-    #   sphinx-rtd-theme
-sphinx-rtd-theme==1.0.0
-    # via -r requirements-dev.in
-sphinxcontrib-applehelp==1.0.2
-    # via sphinx
-sphinxcontrib-devhelp==1.0.2
-    # via sphinx
-sphinxcontrib-htmlhelp==2.0.0
-    # via sphinx
-sphinxcontrib-jsmath==1.0.1
-    # via sphinx
-sphinxcontrib-qthelp==1.0.3
-    # via sphinx
-sphinxcontrib-serializinghtml==1.1.5
-    # via sphinx
 toml==0.10.2
     # via
     #   -c requirements.txt
