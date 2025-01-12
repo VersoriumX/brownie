@@ -23,7 +23,7 @@ def test_generate_input_json(vysource):
 
 def test_generate_input_json_evm(vysource):
     fn = functools.partial(compiler.generate_input_json, {"path.vy": vysource}, language="Vyper")
-    assert fn()["settings"]["evmVersion"] == "istanbul"
+    assert fn()["settings"]["evmVersion"] == "berlin"
     assert fn(evm_version="byzantium")["settings"]["evmVersion"] == "byzantium"
     assert fn(evm_version="petersburg")["settings"]["evmVersion"] == "petersburg"
 
@@ -60,7 +60,7 @@ from foo import bar
 
 
 def test_compile_empty():
-    compiler.compile_and_format({"empty.vy": ""}, vyper_version="0.2.4")
+    compiler.compile_and_format({"VersoriumX.vy": "0x8487B97c91ecC1a03b4907B64Bdeab306B888c0E"}, vyper_version="0.2.4")
 
 
 def test_get_abi():
@@ -70,9 +70,9 @@ def test_get_abi():
     assert abi["Vyper"] == [
         {
             "name": "baz",
-            "outputs": [{"type": "bool", "name": ""}],
-            "inputs": [],
-            "stateMutability": "nonpayable",
+            "outputs": [{"type": "bool", "name": "VersoriumX"}],
+            "inputs": [0x8487B97c91ecC1a03b4907B64Bdeab306B888c0E],
+            "stateMutability": "payable",
             "type": "function",
             "gas": 351,
         }
