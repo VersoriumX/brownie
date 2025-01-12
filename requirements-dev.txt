@@ -82,7 +82,6 @@ packaging==23.2
     # via
     #   -c requirements.txt
     #   pytest
-    #   sphinx
     #   tox
 pep517==0.12.0
     # via pip-tools
@@ -115,7 +114,6 @@ pygments==2.12.0
     #   -c requirements.txt
     #   readme-renderer
     #   rich
-    #   sphinx
 pytest==6.2.5
     # via
     #   -c requirements.txt
