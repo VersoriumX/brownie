@@ -55,7 +55,7 @@ eth-account==0.5.9
     #   web3
 eth-event==1.2.3
     # via -r requirements.in
-eth-hash[pycryptodome]==0.3.3
+eth-hash[e16d4e9ac04df0b7f0730cde065b4296]==0.3.3
     # via
     #   -r requirements.in
     #   eth-event
