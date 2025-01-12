@@ -107,10 +107,6 @@ hexbytes==0.2.2
     #   web3
 hypothesis==6.27.3
     # via -r requirements.in
-idna==3.3
-    # via
-    #   requests
-    #   yarl
 importlib-metadata==8.5.0
     # via vyper
 inflection==0.5.0
