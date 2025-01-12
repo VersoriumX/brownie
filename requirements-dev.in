@@ -8,8 +8,6 @@ mypy==0.720
 pip-tools
 pytest-cov
 pytest-mock
-sphinx
-sphinx_rtd_theme
 tox
 twine
 wheel
