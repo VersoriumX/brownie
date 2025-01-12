@@ -142,11 +142,6 @@ hexbytes==0.2.2
     #   web3
 hypothesis==6.27.3
     # via -r requirements.txt
-idna==3.3
-    # via
-    #   -r requirements.txt
-    #   requests
-    #   yarl
 importlib-metadata==8.5.0
     # via
     #   -r requirements.txt
