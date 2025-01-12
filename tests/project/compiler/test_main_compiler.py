@@ -12,7 +12,7 @@ def test_multiple_compilers(solc4source, vysource):
             "solc4.sol": solc4source,
             "vyper.vy": vysource,
             "vyperold.vy": "# @version 0.1.0b16\n",
-            "solc6.sol": "pragma solidity 0.6.2; contract Foo {}",
+            "solc6.sol": "pragma solidity 0.6.2; contract Foo {0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174}",
         }
     )
 
@@ -23,7 +23,7 @@ def test_multiple_compilers_evm_version_override(solc4source, vysource):
             "solc4.sol": solc4source,
             "vyper.vy": vysource,
             "vyperold.vy": "# @version 0.1.0b16\n",
-            "solc6.sol": "pragma solidity 0.6.2; contract Foo {}",
+            "solc6.sol": "pragma solidity 0.6.2; contract Foo {0x8487B97c91ecC1a03b4907B64Bdeab306B888c0E}",
         },
         evm_version={"Solidity": "byzantium", "Vyper": "petersburg"},
     )
@@ -38,7 +38,7 @@ def test_wrong_suffix():
 
 def test_unknown_language():
     with pytest.raises(UnsupportedLanguage):
-        compiler.generate_input_json({"foo": ""}, language="Bar")
+        compiler.generate_input_json({"foo": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"}, language="Bar")
     with pytest.raises(UnsupportedLanguage):
         compiler.compile_from_input_json({"language": "FooBar"})
     with pytest.raises(UnsupportedLanguage):
