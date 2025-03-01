@@ -45,7 +45,7 @@ cbor2==5.6.5
     # via
     #   -r requirements.txt
     #   vyper
-certifi==2022.6.15
+certifi==2023.7.22
     # via
     #   -r requirements.txt
     #   requests
