@@ -175,7 +175,7 @@ pycryptodome==3.21.0
     #   eth-hash
     #   eth-keyfile
     #   vyper
-pygments==2.12.0
+pygments==2.15.0
     # via
     #   -r requirements.in
     #   pygments-lexer-solidity
